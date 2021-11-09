@@ -39,7 +39,7 @@ function Forecast({data}) {
         dataKey="main.temp"
         stroke="#8884d8"
         activeDot={{ r: 5 }}
-        dot={{r:2}}
+        dot={{r:1}}
       />
         <Line
       name={data && data.city.name + " feels like"}
@@ -47,7 +47,7 @@ function Forecast({data}) {
         dataKey="main.feels_like"
         stroke="rgb(65, 176, 255)"
         activeDot={{ r: 5 }}
-        dot={{r:2}}
+        dot={{r:1}}
       />
     </LineChart>
     </ ResponsiveContainer>
