@@ -6,6 +6,7 @@ import {
   XAxis,
   YAxis,
   CartesianGrid,
+  ResponsiveContainer,
   Tooltip,
   Legend
 } from "recharts";
@@ -20,23 +21,16 @@ function Forecast({data}) {
   return (
     <div className="container">
       <h1>5 days forecast chart</h1>
-      
+      <ResponsiveContainer  width='100%' height={300}>
       <LineChart
-      width={500}
-      height={300}
       data={data.list}
       margin={{
-        top: 5,
-        right: 30,
-        left: 20,
-        bottom: 5
-      }}
+        top: 0, left: 0, right: 0, bottom: 0 
+    }}
     >
       <CartesianGrid strokeDasharray="15 30" />
-      <XAxis dataKey="dt_txt" >
-    {/*<Label value="Pages of my website" offset={-30} position="insideBottom" />*/}
-  </XAxis>
-      <YAxis />
+      <XAxis dataKey="dt_txt" />
+      <YAxis width={25} />
       <Tooltip />
       <Legend />
       <Line
@@ -56,6 +50,7 @@ function Forecast({data}) {
         dot={{r:2}}
       />
     </LineChart>
+    </ ResponsiveContainer>
    </div>
   );
 }
