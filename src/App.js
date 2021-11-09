@@ -2,7 +2,7 @@ import axios from "axios"
 import { useEffect, useState } from "react";
 import CurrentWeather from "./components/CurrentWeather";
 import Forecast from "./components/Forecast"
-import './App.css';
+import './style/App.scss';
 
 function App() {
   const [latitude, setLatitude] = useState(0);
@@ -37,10 +37,12 @@ try{
   }, [latitude,longitude])
 
   return (
+    
+    <div className="main-component">
     <div className="App">
       <CurrentWeather data={weatherData}/>
-<Forecast data={weatherData2}/>
-    </div>
+        <Forecast data={weatherData2}/>
+    </div></div>
   );
 }
 

@@ -5,11 +5,12 @@ function CurrentWeather({data}) {
 
 
   return (
-    <>
+    <div className="container">
       <h1>Current weather in  {data.name}</h1>
-      {data.main && data.main.temp}<br></br>
- {data.main && data.main.feels_like}<br></br>
-   </>
+      <h2>temperature: <strong class="temp_number">{data.main && data.main.temp}°C</strong></h2>
+      <h2>feels like: <strong class="temp_number">{data.main && data.main.feels_like}°C</strong></h2>
+      <h2>probably: <strong class="temp_number">{data.weather && data.weather[0].description}</strong></h2>
+   </div>
   );
 }
 

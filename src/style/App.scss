@@ -1,0 +1,51 @@
+@import "settings";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  background: $bg-color;
+}
+
+.main-component {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 70vmin;
+  height: 90vh;
+  background: $main-bg;
+  text-align: center;
+  margin: 5vh auto;
+  border-radius: 10px;
+  padding: 1vh;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  text-align: center;
+}
+h1 {
+  margin: 30px;
+  color: $text-color;
+  font-size: 2vmax;
+}
+h2 {
+  margin: 10px;
+  color: $text-color2;
+  font-size: 1.5vmax;
+}
+.temp_number{
+  margin: 30px;
+  color: $text-color3;
+  font-size: 1.7vmax;
+}
+
+/*::-webkit-scrollbar-corner{
+  background-color: #149fff;
+}*/
