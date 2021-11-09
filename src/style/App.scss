@@ -16,7 +16,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  width: 70vmin;
+  width: 90vmin;
   height: 90vh;
   background: $main-bg;
   text-align: center;
@@ -28,8 +28,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: start;
+  align-items: center;
   text-align: center;
 }
+
 h1 {
   margin: 30px;
   color: $text-color;
